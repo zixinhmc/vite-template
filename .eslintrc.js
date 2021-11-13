@@ -1,22 +1,28 @@
 module.exports = {
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      tsx: true,
+    },
+  },
   env: {
     browser: true,
-    es2021: true,
     node: true,
   },
+  plugins: ['@typescript-eslint'],
   extends: [
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended', // 添加 prettier 插件
   ],
-  parserOptions: {
-    ecmaVersion: 12,
-    parser: '@typescript-eslint/parser',
-    sourceType: 'module',
-  },
-  plugins: ['vue', '@typescript-eslint'],
   rules: {
-    'import/no-extraneous-dependencies': [2, { devDependencies: true }],
+    'no-submodule-imports': ['off', '/@'],
+    'no-implicit-dependencies': ['off', ['/@']],
+    // 强制组件名称必须为多个单词的组合
+    'vue/multi-word-component-names': 'off',
   },
   globals: {
     error: true,
