@@ -7,7 +7,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <div class="container bg-blue-500">fsafsafsa</div>
+  <div class="container bg-cyan-300">fsafsafsa</div>
 </template>
 
 <style>
