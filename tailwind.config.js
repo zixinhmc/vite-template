@@ -1,14 +1,6 @@
-const colors = require('tailwindcss/colors');
-delete colors['lightBlue'];
-
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.js'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {
-      colors,
-    },
-  },
+  content: ['./src/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+  theme: {},
   variants: {
     extend: {},
   },
