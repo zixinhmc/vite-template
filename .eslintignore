@@ -15,6 +15,7 @@ lib
 /docs
 .vscode
 .local
+.gitignore
 /bin
 /build
 /config
