@@ -8,7 +8,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <div class="container bg-cyan-300">fsafsafsa</div>
+  <div class="container flex relative flex-col m-0 bg-cyan-300">fsafsafsa</div>
 </template>
 
 <style lang="scss">

@@ -17,6 +17,7 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended', // 添加 prettier 插件
+    'plugin:tailwindcss/recommended',
   ],
   rules: {
     'no-submodule-imports': ['off', '/@'],
